@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  color:ffffff;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card {
+  margin: 50px
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.Cardtitle {
+  color:#6eb92b;
+
+}
+
+.logo {
+  size:60px
+margin: 20px
+
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.YugeTitle {
+  color: #2c3e50
+  margin: 40px;
+}
+
+.a {
+  color: green
+  text-decoration:none;
+}
+
+.p {
+  color: #697070
+}
+ .header {
+   background-color: #ffffff
+ }
